@@ -25,13 +25,13 @@ export const CardDisplay = ({
                       card.active
                         ?
                         <Box
-                          className="animate__animated animate__flipInY animate__faster"
+                          // className="animate__animated animate__flipInY animate__faster"
                         >
                           <CardMedia
                             component="img"
                             height="auto"
                             image={`../src/assets/heroes/${card.numRand}.jpg`}
-                            alt="Paella dish"
+                            alt={`${card.numRand}`}
                             sx={{ padding: 0 }}
                           />
 
@@ -40,7 +40,7 @@ export const CardDisplay = ({
 
                         <Box
                           sx={{ height: '100%', width: 'max_content', margin: 0 }}
-                          className="animate__animated animate__rubberBand"
+                          // className="animate__animated animate__rubberBand"
                           onClick={() => handleChangeActive(card.id, card.numRand)}
                         >
                           <CardMedia

@@ -7,17 +7,17 @@ import { calcDisplayCards } from './helpers/generatorCards';
 import { logicOfGame } from './helpers/logicOfGame';
 import { useChronometer } from './hooks/useChronometer';
 
-
+const initialState = {
+  play: 'Start to play',
+  active: false,
+}
 
 
 export const PlayCardsApp = () => {
 
   const [numOfCards, setNumOfCards] = useState(12)
 
-  const [startPlay, setStartPlay] = useState({
-    play: 'Start to play',
-    active: false,
-  })
+  const [startPlay, setStartPlay] = useState(initialState)
 
   const [lastTime, setLastTime] = useState('');
 
@@ -52,7 +52,7 @@ export const PlayCardsApp = () => {
         play: 'Start to play',
         active: false,
       });
-      
+
       setCards([]);
 
       restart();
@@ -87,7 +87,7 @@ export const PlayCardsApp = () => {
   }, [cards])
 
 
-  const handleChangeActive = (idCard, numRandCard) =>{
+  const handleChangeActive = (idCard, numRandCard) => {
     setCards(logicOfGame(idCard, numRandCard, cards, lastCard, setLastCard))
   }
 
@@ -105,9 +105,9 @@ export const PlayCardsApp = () => {
       />
 
       <DisplayGame
-          cards={cards}
-          numOfCards={numOfCards}
-          handleChangeActive={handleChangeActive}
+        cards={cards}
+        numOfCards={numOfCards}
+        handleChangeActive={handleChangeActive}
       />
 
     </>

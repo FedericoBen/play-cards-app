@@ -6,7 +6,7 @@ export const useChronometer = () => {
 
     const [isActive, activeChronometer] = useState(false);
 
-    const [secondsString, setCorrectTimerNumStri] = useState('');
+    const [secondsString, setCorrectTimerNumStri] = useState(`0 min  : 0 seg`);
 
     const restart = () =>{
         setSeconds(0)
