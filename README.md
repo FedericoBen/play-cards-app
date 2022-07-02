@@ -16,3 +16,19 @@ Se implemento un custom hook personalizado que hace el papel de cronometro el cu
 Debajo viene un botón en caso que se desee acabar el juego y reiniciar para escoger una cantidad diferente de cartas.
 
 Luego se hace un display de las cartas mostrando la disposición mas cuadrada que permita la cantidad que se ha escogido, como ejemplo, si se escogió la cantidad de 30 cartas se va a disponer en 6 horizontales y 5 verticales, lo siguiente es que el jugador encuentro todas las parejas sin equivocarse y al finalizar muestra el tiempo que tomo terminar.
+
+**Correcciones futuras:**
+<ul>
+    <li>
+        Se debe tener en cuenta la distribucion de los archivos de las imagenes ya que en gh-pages, ya que tienene un cierto bug para cargar los heroes, pero a medida que se va jugando se corregi solo.
+    </li>
+    <li>
+        Se debe establecer una tabala de puntuaciones para el ususario, y si se puede a futuro poner una tabla para el publico en general con su backen propio.
+    </li>
+
+</ul>
+
+
+## Demo
+
+https://federicoben.github.io/play-cards-app/
