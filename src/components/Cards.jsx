@@ -30,7 +30,7 @@ export const Cards = ({
                           <CardMedia
                             component="img"
                             height="auto"
-                            image={`../../dist/heroes/${card.numRand}.jpg`}
+                            image={`./heroes/${card.numRand}.jpg`}
                             alt={`${card.numRand}`}
                             sx={{ padding: 0 }}
                           />
