@@ -3,7 +3,7 @@ import { Box } from '@mui/system'
 import React from 'react'
 import { getDividers } from '../helpers/generatorCards'
 
-export const CardDisplay = ({
+export const Cards = ({
     numOfCards,
     handleChangeActive,
     card
@@ -30,7 +30,7 @@ export const CardDisplay = ({
                           <CardMedia
                             component="img"
                             height="auto"
-                            image={`../src/assets/heroes/${card.numRand}.jpg`}
+                            image={`../../dist/heroes/${card.numRand}.jpg`}
                             alt={`${card.numRand}`}
                             sx={{ padding: 0 }}
                           />

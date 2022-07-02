@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material'
 
 import React from 'react'
-import { CardDisplay } from './CardDisplay'
+import { Cards } from './Cards'
 
 export const DisplayGame = ({
     cards,
@@ -15,7 +15,7 @@ export const DisplayGame = ({
       >
         {
           cards.map((card) => (
-            <CardDisplay
+            <Cards
             key={card.id}
             numOfCards={numOfCards}
             handleChangeActive={handleChangeActive}
